@@ -1,0 +1,16 @@
+# Changelog
+All notable changes to this package will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+## [0.0.1] - 2018-1-?
+
+### Added *Unity Package \com.unity.3dempty*.
+
+-Project Setting updated for Legacy 3D
+-Post Processing removed, any example content removed
+
+## [0.0.2] - 2018-1-26
+
+### Update some lighting and player settings
