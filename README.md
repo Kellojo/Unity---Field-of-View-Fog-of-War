@@ -12,4 +12,8 @@ This code snippet can be used to achieve a stealth game like field of view. Than
 1. Add the "Field of View" prefab to your scene.
 2. Setup the "Target Mask" on the Field of View Component
 3. Setup the "Obstacle Mask" on the Field of View Component
-4. Add the "Hideable" component to the gameObjects that should be affected by the field of view 
+4. Add the "Hideable" component to the gameObjects that should be affected by the field of view
+
+
+## How to implement your own behaviour
+Any MonoBehaviour that should be affected by the field of view needs to implement the IHideable interface which gives you the option to implement the "OnFOVEnter" and "OnFOVLeave" yourself.
