@@ -10,6 +10,6 @@ This code snippet can be used to achieve a stealth game like field of view. Than
 
 ## How to use
 1. Add the "Field of View" prefab to your scene.
-    1.1 Setup the "Target Mask" on the Field of View Component
-    1.2 Setup the "Obstacle Mask" on the Field of View Component
-2. Add the "Hideable" component to the gameObjects that should be affected by the field of view 
+2. Setup the "Target Mask" on the Field of View Component
+3. Setup the "Obstacle Mask" on the Field of View Component
+4. Add the "Hideable" component to the gameObjects that should be affected by the field of view 
