@@ -16,4 +16,4 @@ This code snippet can be used to achieve a stealth game like field of view. Than
 
 
 ## How to implement your own behaviour
-Any MonoBehaviour that should be affected by the field of view needs to implement the IHideable interface which gives you the option to implement the "OnFOVEnter" and "OnFOVLeave" yourself.
+Any MonoBehaviour that should be affected by the field of view needs to implement the IHideable interface which gives you the option to implement the "OnFOVEnter" and "OnFOVLeave" methods yourself.
