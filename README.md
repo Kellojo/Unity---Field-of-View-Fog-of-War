@@ -5,8 +5,13 @@ This code snippet can be used to achieve a stealth game like field of view. Than
 
 ## Showcase
 ![](https://i.imgur.com/7AqKA66.gif)
-![](https://i.imgur.com/iFtXTW2.png)
+![Added Peripheral Vision](https://i.imgur.com/wkc6zrS.gif)
 
+## Features
+- Field of view visualization
+- Edge revolsing
+- Tweakable field of view (radius and width)
+- Peripheral vision  (tweakable radius and width)
 
 ## How to use
 1. Add the "Field of View" prefab to your scene.
