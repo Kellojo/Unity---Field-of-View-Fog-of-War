@@ -141,11 +141,16 @@ public class FieldOfView : MonoBehaviour {
         Vector3 dir = DirFromAngle(globalAngle, true);
         RaycastHit hit;
 
+
+        Physics.autoSyncTransforms = false;
+
         Debug.DrawRay(transform.position, dir * viewRadius, Color.red);
 
         if (Physics.Raycast(transform.position, dir, out hit, viewRadius, obstacleMask)) {
+            Physics.autoSyncTransforms = true;
             return new ViewCastInfo(true, hit.point, hit.distance, globalAngle);
         } else {
+            Physics.autoSyncTransforms = true;
             return new ViewCastInfo(false, transform.position + dir * viewRadius, viewRadius, globalAngle);
         }
     }
@@ -195,6 +200,8 @@ public class FieldOfView : MonoBehaviour {
     void FindVisibleTargets() {
         Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, targetMask);
 
+        Physics.autoSyncTransforms = false;
+
         /* check normal field of view */
         for (int i = 0; i < targetsInViewRadius.Length; i++) {
             Transform target = targetsInViewRadius[i].transform;
@@ -224,7 +231,9 @@ public class FieldOfView : MonoBehaviour {
                     target.GetComponent<IHideable>().OnFOVLeave();
                 }
             }
-        }   
+        }
+
+        Physics.autoSyncTransforms = true;
     }
 
     /// <summary>
